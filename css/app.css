@@ -1,0 +1,117 @@
+.grid-container {
+    margin-top: 0.5%;
+}
+
+.logo {
+    line-height: inherit;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.logo:hover,
+.logo:focus {
+    color: #000000;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+:root {
+    /* --bg-color: #fff8e7;
+    --fg-color: #f1ff73;
+    --accent-color: #7fff00;
+    --focused-accent-color: #4F9A00; */
+
+    /* --bg-color: #E3FCBF;  */
+    --bg-color: #fefefe;
+    --fg-color: #B8F1B0;
+    --accent-color: #00FFAB;
+    --focused-accent-color: #14C38E;
+
+    /* --bg-color: #F5FDB0;
+    --fg-color: #F7E6AD;
+    --accent-color: #28FFBF;
+    --focused-accent-color: #BCFFB9; */
+
+    /* --bg-color: #9FB4FF;
+    --fg-color: #99FFCD;
+    --accent-color: #FFF56D;
+    --focused-accent-color: #FFD36E; */
+}
+
+body {
+    background: var(--bg-color);
+    
+}
+
+.top-bar, .top-bar ul {
+    background-color: var(--fg-color);
+}
+
+.button, .button.disabled, .button[disabled], .button.disabled:hover, .button[disabled]:hover, .button.disabled:focus, .button[disabled]:focus {
+    background-color: var(--accent-color);
+    color: #000000;
+}
+
+.button:hover, .button:focus {
+    background-color: var(--focused-accent-color);
+    color: #fefefe;
+}
+
+.card {
+    border: 2px solid var(--fg-color);
+    border-radius: 5px;
+    background: var(--fg-color);
+    color: #0a0a0a;
+}
+
+.reveal {
+    z-index: 1006;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: none;
+    padding: 1rem;
+    border: 20px solid var(--fg-color);
+    border-radius: 10px;
+    background-color: var(--bg-color);
+}
+
+[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
+    border: 1px solid var(--accent-color);
+    border-radius: 0;
+    background-color: var(--bg-color);
+}
+
+.fieldset {
+    margin: 1.125rem 0;
+    padding: 1.25rem;
+    border: 1px solid var(--accent-color);
+}
+
+.dropdown.menu > li.is-active > a {
+    background: transparent;
+    color: var(--focused-accent-color);
+}
+
+a {
+    line-height: inherit;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+tbody tr:nth-child(even) {
+    border-bottom: 0;
+    background-color: var(--fg-color);
+}
+
+h2, .h2 {
+    margin-left: 2%;
+}
